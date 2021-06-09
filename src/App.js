@@ -21,7 +21,8 @@ const formHeight = (h, sh) => {
 }
 
 const formResult = (w, h) => {
-  const calc = (w / (h * h));
+  let calc = (w / (h * h));
+  calc = calc.toFixed(2);
 
   const status = (calc) => {
     if (calc < 18.5) {
@@ -30,15 +31,17 @@ const formResult = (w, h) => {
       return 'Normal or Healthy Weight';
     } else if (calc >= 25 && calc < 29.9) {
       return 'Overweight';
-    } else {
+    } else if (calc >= 30){
       return 'Obese';
+    } else {
+      return '';
     }
   }
 
   return (
     <div>
       <p> Result: </p>
-      <p> {calc.toFixed(1)} </p>
+      <p> {calc != 'NaN' ? calc : 0} </p>
       <p> {status(calc)} </p>
     </div>
   )
