@@ -1,0 +1,34 @@
+/* Geral =========================================== */
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  background: #212226;
+}
+
+.container {
+  min-height: 100vh;
+  background: #eee;
+  padding: 30px;
+  margin: 0 auto;
+  background: #212226;
+}
+
+/* Responsive =========================================== */
+@media (min-width: 800px) {
+  html {
+      font-size: 87.5%;
+  }
+
+  body {
+    overflow: hidden;
+    height: 100%;
+    clip-path: circle(red, -20%);
+  }
+
+  .container {
+    max-width: 1600px;
+  }
+}

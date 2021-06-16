@@ -1,0 +1,118 @@
+/* Form =========================================== 
+https://www.youtube.com/watch?v=IxRJ8vplzAo
+*/
+.form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .weight-section{
+    width: 50%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .weight-section input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  .weight-section label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid white;
+  }
+  
+  .weight-section label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .content-weight{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+  }
+  
+  .weight-section input:focus + .label-weight .content-weight,
+   .form input:valid + .label-weight .content-weight{
+    transform: translateY(-150%);
+    color: #a7236f;
+  }
+  
+  .weight-section input:focus + .label-weight::after,
+   .form input:valid + .label-weight::after{
+    transform: translateX(0%);
+  }
+  
+  #form h2{
+    color: #a7236f;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .btn{
+    margin-top: 1rem;
+    width: 100%;
+    background-color : #a7236f;
+    color: white;
+    border-radius: 1rem;
+    height: 3rem;
+    border: none;
+  }
+  
+  
+  /* Result =========================================== */
+  .card-container {
+    width: min(75vw, 800px);
+    margin: auto;
+  }
+  
+  .card-content {
+    margin-top: 4rem;
+    background-color: black;
+    border-radius: 4rem;
+    padding: 1.5rem 2rem;
+  
+    box-shadow: 2px 1px 5px grey;
+  }
+  
+  .card-content h3{
+    text-align: center;
+    color: grey;
+    font-weight: normal;
+  }
+  
+  .card-content .result-number{
+    color: #a7236f;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
+  }
+  
+  .card-content .result-text{
+    color: #a7236f;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+  }
