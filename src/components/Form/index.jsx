@@ -55,6 +55,8 @@ export const Form = ({ w, sw, h, sh }) => {
     <>
       <form className="form">
           {formWeight(w, sw)}
+          {formHeight(h, sh)}
+          <span className="sub-text"> Use ',' or '.' to split meters and centimeters (Ex: 1,89) </span>
       </form>
       <section id="result" className="card-container">
           {formResult(w, h)}

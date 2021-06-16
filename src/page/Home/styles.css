@@ -1,11 +1,10 @@
 /* Geral =========================================== */
-
 html {
   font-size: 93.75%;
 }
 
 body {
-  background: #212226;
+  background: #0a0b0d;
 }
 
 .container {
@@ -13,8 +12,9 @@ body {
   background: #eee;
   padding: 30px;
   margin: 0 auto;
-  background: #212226;
+  background: #0a0b0d;
 }
+
 
 /* Responsive =========================================== */
 @media (min-width: 800px) {
