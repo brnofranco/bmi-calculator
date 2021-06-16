@@ -4,21 +4,27 @@ export const Form = ({ w, sw, h, sh }) => {
 
   const formWeight = (w, sw) => {
     return(
-      <div className="weight-section">
-        <input type="text" autoComplete="off" value={w} onChange={(e) => sw(e.target.value)}/>
-        <label htmlFor="weight" className="label-weight"> 
-            <span className="content-weight">Weight (kg)</span> 
-        </label>
-      </div>
+        <input 
+          type="text" 
+          className="text-input" 
+          autoComplete="off" 
+          value={w} 
+          onChange={(e) => sw(e.target.value)} 
+          placeholder="Weight (kg)"
+        />
     )
   }
       
   const formHeight = (h, sh) => {
     return(
-      <div className="height-section">
-        <input type="text" autoComplete="off" value={h} onChange={(e) => sh(e.target.value)}/>
-        <label htmlFor="height" className="label-height"> <span className="content-weight">Height (meters)</span> </label>
-      </div>
+        <input 
+          type="text" 
+          className="text-input" 
+          autoComplete="off" 
+          value={h} 
+          onChange={(e) => sh(e.target.value)} 
+          placeholder="Height (meters)"
+        />
     )
   }
       
@@ -39,12 +45,13 @@ export const Form = ({ w, sw, h, sh }) => {
         return '';
       }
     }
+
   
     return (
       <div className="card-content">
         <h3>Your result:</h3>
-        <p className="result-number"> {calc != 'NaN' ? calc : 0} </p>
-        <p className="result-text">{status(calc)}</p>
+        <p className="result-number"> {calc === 'NaN' || calc === 'Infinity' || calc === 0.0 ? 0 : calc} </p>
+        <p className="result-text">{w === '' || h === '' ? '' : status(calc)}</p>
       </div>
     )
   }
@@ -52,15 +59,16 @@ export const Form = ({ w, sw, h, sh }) => {
 
 
   return(
-    <>
+    <section className="bmi-calc">
+      <h2 className="sub-title"> Fill the fields below and see your result </h2>
       <form className="form">
-          {formWeight(w, sw)}
+          {formWeight(w, sw)} <br/> <br/>
           {formHeight(h, sh)}
-          <span className="sub-text"> Use ',' or '.' to split meters and centimeters (Ex: 1,89) </span>
+          <span className="sub-text"> Use " , "  or " . " to split meters and centimeters (ex: 1,89) </span>
       </form>
-      <section id="result" className="card-container">
+      <div id="result" className="card-container">
           {formResult(w, h)}
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
