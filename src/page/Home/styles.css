@@ -1,33 +1,117 @@
-/* Geral =========================================== */
-html {
-  font-size: 93.75%;
-}
-
-body {
-  background: #0a0b0d;
-}
-
-.container {
-  min-height: 100vh;
-  padding: 30px;
-  margin: 0 auto;
-  background: #0a0b0d;
-}
-
-
-/* Responsive =========================================== */
-@media (min-width: 800px) {
-  html {
-      font-size: 87.5%;
-  }
-
+@media (min-width: 701px) {
+  /* Geral =========================================== */
   body {
-    overflow: hidden;
-    height: 100%;
-    clip-path: circle(red, -20%);
+    background: #0a0b0d;
   }
 
   .container {
-    max-width: 1600px;
+    background: #0a0b0d;
+
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
   }
+
+  .sub-text {
+    opacity: 0.8;
+    color: #b7154a;
+  }
+
+
+
+  /* Aside ================================================ */
+  aside {
+    flex: 7;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 120px 80px;
+    background: #121214;
+  }
+
+  .sub-title {
+    color: #b7154a;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-top: 40px;
+  }
+
+
+
+  /* Main ================================================ */
+  main {
+    flex: 9;
+
+    padding: 0 64px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+
+    width: 100%;
+  }
+}
+
+
+
+
+/* MOBILE =========================================== */
+@media (max-width: 700px) {
+  /* Geral =========================================== */
+  html {
+    font-size: 87.5%;
+  }
+
+  body {
+    background: #0a0b0d;
+  }
+
+  .container {
+    min-height: 100vh;
+    padding: 30px;
+    margin: 0 auto;
+    background: #0a0b0d;
+  }
+
+  .sub-text {
+    opacity: 0.8;
+    color: #b7154a;
+  }
+
+
+
+  /* Aside ================================================ */
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    background: #0a0b0d;
+  }
+
+  .sub-title {
+    color: #b7154a;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-top: 30px;
+  }
+
+
+
+  /* Main ================================================ */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+  }
+
 }

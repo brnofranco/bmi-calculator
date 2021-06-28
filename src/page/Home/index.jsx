@@ -12,11 +12,14 @@ export function Home() {
   
   return (
     <section className="container">
-      <Header/>
-      <Form w={weight} sw={setWeight} h={height} sh={setHeight} />
-      <br/>
-      <Table/>
-      <Footer/>
+      <aside>
+        <Header/>
+        <h2 className="sub-title"> Fill the fields and see your result </h2>
+      </aside>
+      <main>
+          <Form w={weight} sw={setWeight} h={height} sh={setHeight} />
+          <Table/>
+      </main>
     </section>
   );
 }

@@ -23,13 +23,13 @@ export const Form = ({ w, sw, h, sh }) => {
           autoComplete="off" 
           value={h} 
           onChange={(e) => sh(e.target.value)} 
-          placeholder="Height (meters)"
+          placeholder="Height (centimeters)"
         />
     )
   }
       
   const formResult = (w, h) => {
-    let calc = (w / (h * h));
+    let calc = (w  / ((h/100) * (h/100)));
     calc = calc.toFixed(2);
   
     const status = (calc) => {
@@ -60,7 +60,6 @@ export const Form = ({ w, sw, h, sh }) => {
 
   return(
     <section className="bmi-calc">
-      <h2 className="sub-title"> Fill the fields below and see your result </h2>
       <form className="form">
           {formWeight(w, sw)} <br/> <br/>
           {formHeight(h, sh)}

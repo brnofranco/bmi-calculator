@@ -1,7 +1,7 @@
 /* Form =========================================== */
 
 .bmi-calc{
-  padding: 30px;
+  padding-top: 30px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -9,19 +9,12 @@
   flex-direction: column;
 }
 
-.sub-title {
-  color: #b7154a;
-  font-weight: 500;
-  text-align: center;
-  font-size: 2rem;
-  padding-bottom: 2rem;
-}
-
 .text-input {
   width: 100%;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border-radius: 10px;
+  border: 1px solid #a8a8b3;
 }
 
 .sub-text {
@@ -33,12 +26,12 @@
   
 /* Result =========================================== */
 .card-container {
-  width: min(75vw, 800px);
+  width: min(75vw, 400px);
   margin: auto;
 }
 
 .card-content {
-  margin-top: 4rem;
+  margin-top: 2rem;
   background-color: #151819;
   border-radius: 4rem;
   padding: 1.5rem 2rem;
@@ -64,4 +57,10 @@
   font-weight: bold;
   text-align: center;
   font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .card-container{
+    padding-bottom: 70px;
+  }
 }

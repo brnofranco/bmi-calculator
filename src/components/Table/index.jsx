@@ -4,7 +4,7 @@ import './styles.css';
 
 export const Table = () => {
   return(
-    <section className="table">
+    <div className="table">
       <h2 className="table-title"> BMI Categories: </h2>
       <table className="data-table">
         <tbody>
@@ -26,6 +26,6 @@ export const Table = () => {
           </tr>
         </tbody>
       </table>
-    </section>
+    </div>
   )
 }
