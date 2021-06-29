@@ -23,13 +23,13 @@ export const Form = ({ w, sw, h, sh }) => {
           autoComplete="off" 
           value={h} 
           onChange={(e) => sh(e.target.value)} 
-          placeholder="Height (centimeters)"
+          placeholder="Height (meters)"
         />
     )
   }
       
   const formResult = (w, h) => {
-    let calc = (w  / ((h/100) * (h/100)));
+    let calc = (w  / (h * h));
     calc = calc.toFixed(2);
   
     const status = (calc) => {
@@ -61,9 +61,9 @@ export const Form = ({ w, sw, h, sh }) => {
   return(
     <section className="bmi-calc">
       <form className="form">
-          {formWeight(w, sw)} <br/> <br/>
+          {formWeight(w, sw)}
           {formHeight(h, sh)}
-          <span className="sub-text"> Use " , "  or " . " to split meters and centimeters (ex: 1,89) </span>
+          <span className="sub-text"> Use " . " (point) to split meters and centimeters (<i>ex: 1.89</i> )</span>
       </form>
       <div id="result" className="card-container">
           {formResult(w, h)}

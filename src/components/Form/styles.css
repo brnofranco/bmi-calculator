@@ -1,27 +1,53 @@
 /* Form =========================================== */
-
 .bmi-calc{
-  padding-top: 30px;
-  margin: 0 auto;
+  margin: auto 0;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
 }
 
+.form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .text-input {
   width: 100%;
   font-size: 20px;
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid #a8a8b3;
+}
+  .text-input:first-child {
+    margin-bottom: 12px;
+  }
+
+.text-input:focus {
+  outline: none;
+  border: 1px solid #b7154a;
+  box-shadow: 0 0 5px #a81546;
 }
 
 .sub-text {
-  opacity: 0.8;
+  opacity: 0.6;
   color: #b7154a;
+  font-size: 0.95rem;
   font-weight: 300;
+  
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 5px;
+  margin-left: 12px;
+
+  font-family: arial, sans-serif;
 }
+
   
   
 /* Result =========================================== */
@@ -59,8 +85,12 @@
   font-size: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .card-container{
     padding-bottom: 70px;
+  }
+
+  .form {
+    padding-top: 30px;
   }
 }
