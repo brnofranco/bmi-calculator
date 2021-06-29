@@ -13,7 +13,6 @@ export function Home() {
     <section className="container">
       <aside>
         <Header/>
-        <h2 className="sub-title"> Fill the fields and see your result </h2>
       </aside>
       <main>
           <Form w={weight} sw={setWeight} h={height} sh={setHeight} />

@@ -1,4 +1,27 @@
 /* HEADER ======================== */
-.header{
+.header {
     width: 100%;
+}
+
+.header img {
+    height: 52px;
+}
+
+.sub-title {
+    color: #b7154a;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 40px;
+}
+
+
+/* RESPONSIVE ====================== */
+@media (max-width: 768px) {
+    .header img {
+        height: 40px;
+    }
+
+    .sub-title {
+        font-size: 1.25rem;
+    }
 }
