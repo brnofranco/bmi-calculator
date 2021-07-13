@@ -10,7 +10,7 @@ export const Form = ({ w, sw, h, sh }) => {
           autoComplete="off" 
           value={w} 
           onChange={(e) => sw(e.target.value)} 
-          placeholder="Weight (kg)"
+          placeholder="Type your weight"
         />
     )
   }
@@ -23,7 +23,7 @@ export const Form = ({ w, sw, h, sh }) => {
           autoComplete="off" 
           value={h} 
           onChange={(e) => sh(e.target.value)} 
-          placeholder="Height (meters)"
+          placeholder="Type your height"
         />
     )
   }
@@ -50,7 +50,7 @@ export const Form = ({ w, sw, h, sh }) => {
     return (
       <div className="card-content">
         <h3>Your result:</h3>
-        <p className="result-number"> {calc === 'NaN' || calc === 'Infinity' || calc === 0.0 ? 0 : calc} </p>
+        <p className="result-number"> {calc === 'NaN' || calc === 'Infinity' ? 0.00 : calc} </p>
         <p className="result-text">{w === '' || h === '' ? '' : status(calc)}</p>
       </div>
     )
@@ -61,9 +61,15 @@ export const Form = ({ w, sw, h, sh }) => {
   return(
     <section className="bmi-calc">
       <form className="form">
+        <div className="fields">
+          <label> Weight (kg) </label>
           {formWeight(w, sw)}
+        </div>
+        <div className="fields">
+          <label> Height (meters) </label>
           {formHeight(h, sh)}
           <span className="sub-text"> Use " . " (point) to split meters and centimeters (<i>ex: 1.89</i> )</span>
+        </div>
       </form>
       <div id="result" className="card-container">
           {formResult(w, h)}

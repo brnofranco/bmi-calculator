@@ -13,12 +13,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 16px;
+  color: #272727;
 }
 
 .text-input {
   width: 100%;
-  font-size: 20px;
-  padding: 10px 10px;
+  font-size: 14px;
+  padding: 10px 14px;
   border-radius: 20px;
   border: 1px solid #a8a8b3;
 }
@@ -28,13 +42,13 @@
 
 .text-input:focus {
   outline: none;
-  border: 1px solid #b7154a;
-  box-shadow: 0 0 5px #a81546;
+  border: 1px solid #50D890;
+  box-shadow: 0 0 5px #39a56b;
 }
 
 .sub-text {
   opacity: 0.6;
-  color: #b7154a;
+  color: #272727;
   font-size: 0.95rem;
   font-weight: 300;
   
@@ -58,7 +72,7 @@
 
 .card-content {
   margin-top: 2rem;
-  background-color: #151819;
+  background: #50D890;
   border-radius: 4rem;
   padding: 1.5rem 2rem;
 
@@ -67,19 +81,19 @@
 
 .card-content h3{
   text-align: center;
-  color: grey;
+  color: #272727;
   font-weight: normal;
 }
 
 .card-content .result-number{
-  color: #b7154a;
+  color: #306c94;
   font-weight: bold;
   text-align: center;
   font-size: 5rem;
 }
 
 .card-content .result-text{
-  color: #91a3ad;
+  color: #1f2c1f;
   font-weight: bold;
   text-align: center;
   font-size: 1.5rem;

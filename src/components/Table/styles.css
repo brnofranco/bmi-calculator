@@ -1,7 +1,7 @@
 /* Table =========================================== */
 .table{
   margin-top: 32px;
-  background: linear-gradient(-150deg, #c01a52, #9e103f, #5e0422);
+  background: linear-gradient(-150deg, #4F98CA, #50D890, #4F98CA);
   border-radius: 0.15rem;
   padding: 1rem;
   width: 100%;
@@ -15,11 +15,13 @@
 .table-title {
   text-align: center;
   font-size: 1.5rem;
+  color: #111111;
 }
 
 .data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
+  color: #1a1a1a;
 }
 
 .data-table td {

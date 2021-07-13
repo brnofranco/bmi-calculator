@@ -21,7 +21,7 @@ export const Table = () => {
             <td> Overweight </td>
           </tr>
           <tr>
-            <td> 30.0 and Above </td>
+            <td> 30.0 and above </td>
             <td> Obese </td>
           </tr>
         </tbody>

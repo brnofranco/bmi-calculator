@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles.css';
+import './styles.scss';
 import { Form } from '../../components/Form';
 import  { Header } from '../../components/Header';
 import { Table } from '../../components/Table';
