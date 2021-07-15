@@ -15,8 +15,8 @@ export function Home() {
         <Header/>
       </aside>
       <main>
-          <Form w={weight} sw={setWeight} h={height} sh={setHeight} />
-          <Table/>
+        <Form weight={weight} setWeight={setWeight} height={height} setHeight={setHeight} />
+        <Table/>
       </main>
     </section>
   );
