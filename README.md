@@ -5,30 +5,30 @@
 <br>
 
 <p align="center">
-  <img alt="PrintScreen" src="https://i.ibb.co/xD7NKYp/download.png" width="100%">
+  <img alt="PrintScreen" src="https://i.ibb.co/brPYrRq/Screenshot-1.png" width="100%">
 </p>
 
-## ✨ Tecnologias
+## ✨ Tecnologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was built with:
 
 - [React](https://reactjs.org)
 - [SASS](https://sass-lang.com/)
 
-## 💻 Projeto
+## 💻 Project
 
-O podcastr é um app para reprodução de episódios em áudio do seu podcast favorito.
+The BMI.calculator is, as the name supposes, a really BMI calculator using weight (KG) and height (meters).
 
-## 🚀 Como executar
+## 🚀 How to see
 
-Você pode acessá-lo em [`bmi-calculator-brnofranco.vercel.app`](https://bmi-calculator-brnofranco.vercel.app)
+You can check the [`bmi-calculator-brnofranco.vercel.app`](https://bmi-calculator-brnofranco.vercel.app)
 
-ou
-- Clone o repositório
-- Instale as dependências com `yarn`
-- Inicie o servidor com `yarn start`
+or
+- Clone the repo
+- Install the dependencies with `yarn`
+- Start the server with `yarn start`
 
-Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
+Now you can access the [`localhost:3000`](http://localhost:3000) do seu navegador.
 
 ---
 

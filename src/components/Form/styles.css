@@ -61,20 +61,23 @@ input[type=number] {
   color: #272727;
   font-size: 14px;
   font-weight: 300;
-  margin-left: 12px;
 
   font-family: arial, sans-serif;
+}
+
+.sub-text-margin {
+  margin-left: 12px;
 }
 
   
 /* Result =========================================== */
 .card-container {
   width: min(75vw, 400px);
-  margin: auto;
+  margin: 0 auto;
 }
 
 .card-content {
-  margin-top: 1.5rem;
+  margin-top: 20px;
   background: #50D890;
   border-radius: 4rem;
   padding: 1.5rem 2rem;
@@ -103,11 +106,11 @@ input[type=number] {
 }
 
 @media (max-width: 768px) {
-  .card-container{
-    padding-bottom: 40px;
-  }
-
   .form {
     padding-top: 30px;
+  }
+
+  .sub-text-margin {
+    margin-left: 0px;
   }
 }

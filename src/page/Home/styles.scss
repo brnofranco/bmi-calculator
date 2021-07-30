@@ -1,3 +1,5 @@
+@import "../../styles/_variables.sass";
+
 @media (min-width: 769px) {
   .container {
     background: #EFFFFB;
@@ -14,8 +16,8 @@
   
       padding: 120px 80px;
   
-      background: #272727;
-      box-shadow: 1px 1px 10px #000000;
+      background: $darkBackground;
+      box-shadow: 1px 1px 10px black;
     }
 
     main {
@@ -23,25 +25,21 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: stretch;
+      /* align-items: stretch; */
       text-align: center;
 
       padding: 0 64px;
-      width: 100%;
     }
   } 
 }
 
 
-
-
-/* MOBILE =========================================== */
 @media (max-width: 768px) {
   html {
     font-size: 87.5%;
 
     body {
-      background: #EFFFFB;
+      background: $whiteBackground;
     }
   }
 
@@ -49,7 +47,7 @@
     min-height: 100vh;
     padding: 30px;
     margin: 0 auto;
-    background: #EFFFFB;
+    background: $whiteBackground;
 
     aside {
       display: flex;
@@ -69,6 +67,7 @@
       text-align: center;
   
       width: 100%;
+      gap: 36px;
     }
   }
 }

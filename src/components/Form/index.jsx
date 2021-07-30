@@ -6,7 +6,7 @@ export const Form = ({ weight, setWeight, height, setHeight }) => {
     let resultBmi = (weight  / (height * height));
     resultBmi = resultBmi.toFixed(2);
 
-    const restultBmiLength = (resultBmi.length - 3);
+    /* const restultBmiLength = (resultBmi.length - 3); */
   
     const status = (resultBmi) => {
       if (resultBmi < 18.5) {
@@ -24,13 +24,17 @@ export const Form = ({ weight, setWeight, height, setHeight }) => {
     
     return (
       <div className="card-content">
-        <h3>Your result:</h3>
-        <p className="result-number"> 
-          {resultBmi === 'NaN' || resultBmi === 'Infinity' || restultBmiLength > 2 || weight === '' 
-          ? 0
-          : resultBmi}
-        </p>
-        <p className="result-text">{weight === '' || height === '' ? '' : status(resultBmi)}</p>
+        {weight === undefined || height === undefined || weight === '' || height === '' 
+          ? (<>
+                <h3> Your result will be shown here </h3>
+                <span className="sub-text"> Make sure to fill in all fields </span>
+            </>)
+          : (<>
+                <h3>Your result:</h3>
+                <p className="result-number"> {resultBmi} </p>
+                <p className="result-text"> {weight === '' || height === '' ? '' : status(resultBmi)} </p>
+              </>)
+        }
       </div>
     )
   }
@@ -48,7 +52,7 @@ export const Form = ({ weight, setWeight, height, setHeight }) => {
               onChange={(e) => setHeight(e.target.value)} 
               placeholder="Type your height"
             />
-          <span className="sub-text"> Use " . " (point) to split meters and centimeters. </span>
+          <span className="sub-text sub-text-margin"> Use " . " (point) to split meters and centimeters. </span>
           </div>
           <div className="fields">
             <label> Weight (kg) </label>
