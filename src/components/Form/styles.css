@@ -36,6 +36,7 @@ label {
   padding: 10px 14px;
   border-radius: 20px;
   border: 1px solid #a8a8b3;
+  transition: all 0.2s ease-out;
 }
   .text-input:first-child {
     margin-bottom: 12px;
@@ -45,6 +46,7 @@ label {
   outline: none;
   border: 1px solid #50D890;
   box-shadow: 0 0 5px #39a56b;
+  transition: all 0.2s ease-in;
 }
 
 input[type=number]::-webkit-inner-spin-button { 

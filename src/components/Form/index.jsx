@@ -12,7 +12,7 @@ export const Form = ({ weight, setWeight, height, setHeight }) => {
       if (resultBmi < 18.5) {
         return 'Underweight';
       } else if (resultBmi >= 18.5 && resultBmi < 24.9) {
-        return 'Normal or Healthy Weight';
+        return 'Healthy Weight';
       } else if (resultBmi >= 25 && resultBmi < 29.9) {
         return 'Overweight';
       } else if (resultBmi >= 30 && resultBmi <= 100){
