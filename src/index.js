@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/global.sass';
+import './styles/global.scss';
 
 import { Home } from './page/Home';
 

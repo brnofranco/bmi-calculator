@@ -37,16 +37,20 @@ label {
   border-radius: 20px;
   border: 1px solid #a8a8b3;
   transition: all 0.2s ease-out;
+  color: #39a56b;
 }
   .text-input:first-child {
     margin-bottom: 12px;
   }
-
 .text-input:focus {
   outline: none;
   border: 1px solid #50D890;
   box-shadow: 0 0 5px #39a56b;
   transition: all 0.2s ease-in;
+}
+.text-input::placeholder {
+  color: rgba(1, 1, 1, 0.1);
+  font-style: italic;
 }
 
 input[type=number]::-webkit-inner-spin-button { 

@@ -9,11 +9,19 @@
 }
 
 .logo {
-    height: 52px;
+    width: 70%;
+    
+    img {
+        height: 100%;
+    }
 }
 
 .scale {
-    height: 15rem;
+    width: 60%;
+    
+    img {
+        height: 100%;
+    }
 }
 
 .sub-title {
@@ -36,11 +44,19 @@
     }
     
     .logo {
-        height: 2rem;
+        width: 80%;
+        
+        img {
+            height: 100%;
+        }
     }
     
     .scale {
-        height: 10rem;
+        width: 80%;
+        
+        img {
+            height: 100%;
+        }
     }
     
     .sub-title {
@@ -56,7 +72,7 @@
     }
     
     .logo {
-        height: 40px;
+         height: 64px;   
     }
     
     .scale {

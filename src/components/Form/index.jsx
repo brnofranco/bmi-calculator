@@ -1,12 +1,13 @@
-import './styles.css';
+import './styles.scss';
 
 export const Form = ({ weight, setWeight, height, setHeight }) => { 
 
   const formResult = (weight, height) => {
+    /* let newHeight = parseFloat(height?.toString().replace(',','.'));
+    let newWeight = parseFloat(weight?.toString().replace(',','.'));
+ */
     let resultBmi = (weight  / (height * height));
     resultBmi = resultBmi.toFixed(2);
-
-    /* const restultBmiLength = (resultBmi.length - 3); */
   
     const status = (resultBmi) => {
       if (resultBmi < 18.5) {
@@ -15,7 +16,7 @@ export const Form = ({ weight, setWeight, height, setHeight }) => {
         return 'Healthy Weight';
       } else if (resultBmi >= 25 && resultBmi < 29.9) {
         return 'Overweight';
-      } else if (resultBmi >= 30 && resultBmi <= 100){
+      } else if (resultBmi >= 30){
         return 'Obese';
       } else {
         return;
@@ -24,7 +25,7 @@ export const Form = ({ weight, setWeight, height, setHeight }) => {
     
     return (
       <div className="card-content">
-        {weight === undefined || height === undefined || weight === '' || height === '' 
+        {weight === undefined || height === undefined || weight === '' || height === '' || resultBmi > 100 || resultBmi < 0
           ? (<>
                 <h3> Your result will be shown here </h3>
                 <span className="sub-text"> Make sure to fill in all fields </span>
