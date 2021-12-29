@@ -31,5 +31,14 @@ or
 Now you can access the [`localhost:3000`](http://localhost:3000) do seu navegador.
 
 ---
-
-By Bruno Franco - ([`LinkedIn`](https://www.linkedin.com/in/brunofmoraes/)).
+<table align="center">
+    <tr>
+        <td align="center">
+            <a href="https://github.com/brnofranco">
+                <img src="https://avatars.githubusercontent.com/u/52510594?v=4" width="150px;" alt="Foto de Bruno Franco" />
+                <br/>
+                <b>Bruno Franco</b>
+            </a>
+        </td>
+    </tr>
+</table>
